@@ -1,0 +1,19 @@
+package operator;
+
+public class BinaryEx_01 {
+	public static void main(String[] args) {
+		//산술 연산자
+		int num1 = 17;
+		int num2 = 4; 
+		
+		int result = num1 + num2;
+		//int result = 17 + 4;
+		//int result = 21;
+		// "=" is also operator (대입 연산자)
+		//  --> 오른쪽 항의 값을 왼쪽 변수에 저장한다. 
+		
+		
+		System.out.println("result : " + result);
+		
+	}
+}

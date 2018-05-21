@@ -1,0 +1,12 @@
+Operation 
+ - calculate
+ - 데이터 가공 
+ - 1개이상의 연산자와 피연산자로 구성 
+  ex) 1+3 , +3
+
+Operator
+1. function 
+ - 산술, 관계, 논리, 대입, 기타
+ 
+2. number of operand
+ - 이항, 단항, 삼항 

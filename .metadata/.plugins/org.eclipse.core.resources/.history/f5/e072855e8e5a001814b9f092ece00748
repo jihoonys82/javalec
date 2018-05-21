@@ -1,0 +1,40 @@
+package scanner;
+
+import java.util.Scanner;
+
+public class ScannerEx_04_Quiz {
+	public static void main(String[] args) {
+		/*
+		 * Quiz
+		 * Make variables about Personal information for artificial person and print the results
+		 */
+		
+		// 1. personal info variable
+		// pName, pAge, pSex, pHeight
+		String pName;
+		int pAge;
+		char pSex;
+		double pHeight; 
+		
+		// 2. receive proper values in each variables via Scanner method 
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Name : ");
+		pName = sc.nextLine();
+		System.out.print("Age : ");
+		pAge = sc.nextInt();
+		System.out.print("Sex : ");
+		String strSex = sc.nextLine();
+		pSex =  strSex.charAt(0);
+		System.out.print("Height : ");
+		pHeight = sc.nextDouble();
+				
+		// 3. print result in console
+		System.out.println("Name : " + pName);
+		System.out.println("Age : " + pAge);
+		System.out.println("Sex : " + pSex);
+		System.out.println("Height : " + pHeight);
+		
+		
+	}
+}

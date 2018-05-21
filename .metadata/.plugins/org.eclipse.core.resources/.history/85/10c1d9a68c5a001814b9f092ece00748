@@ -1,0 +1,19 @@
+package scanner;
+
+import java.util.Scanner;
+
+public class ScannerEx_02 {
+	public static void main(String[] args) {
+		
+		// declaration scanner object 
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Input : ");
+		String str = input.nextLine();
+		
+		System.out.println("Input data : " + str);
+		
+		input.close();
+		
+	}
+}
