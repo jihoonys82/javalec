@@ -2,7 +2,7 @@ package condition;
 
 import java.util.Scanner;
 
-public class IfEx_03_Quiz {
+public class IfEx_03_Quiz_Á¤ÁöÈÆ {
 	public static void main(String[] args) {
 		
 		// use if statement
@@ -10,7 +10,7 @@ public class IfEx_03_Quiz {
 		// if it is positive number print "positive number"
 		// if it is negative number print "negative number" 
 		
-		int num =0;
+		int num = 0;
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -26,6 +26,9 @@ public class IfEx_03_Quiz {
 			System.out.println(num + " is a negative number!");
 		}
 		
+		if(num==0) {
+			System.out.println(num + " is zero.");
+		}
 		
 	}
 }
