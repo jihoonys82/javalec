@@ -1,0 +1,15 @@
+package operator;
+
+public class BinaryEx_05 {
+	public static void main(String[] args) {
+		//Shift operator
+		// <<, >>, >>> 
+		
+		int num = 7; 
+		System.out.println( num << 1 );
+		System.out.println( num << 2 );
+		System.out.println( num << 3 );
+		System.out.println( num << 4 );
+				
+	}
+}
