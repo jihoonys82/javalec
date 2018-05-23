@@ -8,14 +8,23 @@ public class If_Quiz {
 
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("Q1. inspect the number is multiple of 3. ");
 		q1(sc);
 		System.out.println("==============");
+		
+		System.out.println("Q2. Input 2 numbers and compare");
 		q2(sc);
 		System.out.println("==============");
+		
+		System.out.println("Q3. input 3 numbers and print  biggest number.");
 		q3(sc);		
 		System.out.println("==============");
+		
+		System.out.println("Q4. Input 2 numbers and inspect the addition is even number and multiple of 3.");
 		q4(sc);	
 		System.out.println("==============");
+		
+		System.out.println("Q5. Input the score of Korean, English and Mathematics and calculate total score, average and grade.");
 		q5(sc);
 		
 		sc.close();
