@@ -1,7 +1,6 @@
 package condition;
 
 public class IfEx_01 {
-	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		// if statement 
@@ -10,7 +9,7 @@ public class IfEx_01 {
 		// executed when the condition is true(boolean).
 		
 		if(true) 
-			System.out.println("Single line");
+			System.out.println("วัมู");
 		//single line statement. it is NOT recommended.
 		
 		

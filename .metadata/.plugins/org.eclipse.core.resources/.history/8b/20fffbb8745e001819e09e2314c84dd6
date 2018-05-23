@@ -1,7 +1,6 @@
 package condition;
 
 public class IfEx_01 {
-	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		// if statement 
