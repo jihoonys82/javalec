@@ -24,9 +24,7 @@ public class Operator_Quiz03 {
 		System.out.print("Input Number 2 : ");
 		num2 = sc.nextInt();
 		
-		sc.close();
-		
 		//print result 
-		System.out.println("Bigger number is " + (num1>num2? num1 : num2) + ".");
+		System.out.println("Bigger number is" + num1>num2? num1 : num2);
 	}
 }
