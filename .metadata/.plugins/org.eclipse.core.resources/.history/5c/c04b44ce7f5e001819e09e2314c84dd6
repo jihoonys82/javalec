@@ -1,0 +1,88 @@
+package condition;
+
+import java.util.Scanner;
+
+public class If_Quiz {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		//Q1. inspect the number is multiple of 3. 
+		
+		int num1 = 0; 
+		
+		System.out.print("Q1. Input number : ");
+		num1 = sc.nextInt();
+		
+		if(num1%3 == 0) {
+			System.out.println("num[" + num1 + "] is multiple of 3.");
+		} else {
+			System.out.println("num[" + num1 + "] is NOT multiple of 3.");
+		}
+		
+		System.out.println("==============");
+		
+		//Q2. Input 2 numbers and compare 
+		
+		int num2 = 0, num3 = 0;
+		
+		System.out.print("Input first number : ");
+		num2 = sc.nextInt();
+		System.out.print("Input second number : ");
+		num3 = sc.nextInt();
+		
+		if(num2>num3) {
+			System.out.println("Biggest number is " + num2 +".");
+		} else if(num2<num3) {
+			System.out.println("Biggest number is " + num3 +".");
+		} else {
+			System.out.println("Frist number " + num2 + " and " + num3 +" are even.");
+		}
+		
+		System.out.println("==============");
+		
+		//Q3. input 3 numbers and print  biggest number.
+		int num3_1 = 0, num3_2 = 0, num3_3 = 0;
+		
+		System.out.print("Input first number : ");
+		num3_1 = sc.nextInt();
+		System.out.print("Input second number : ");
+		num3_2 = sc.nextInt();
+		System.out.print("Input third number : ");
+		num3_3 = sc.nextInt();
+		
+		if(num3_1>=num3_2 && num3_1>=num3_3) {
+			System.out.println(num3_1 + " is the biggest number.");
+		} else if(num3_2>=num3_1 && num3_2>=num3_3) { 
+			System.out.println(num3_2 + " is the biggest number.");
+		} else if(num3_3>=num3_1 && num3_3>=num3_2) { 
+			System.out.println(num3_3 + " is the biggest number.");
+		} else {
+			System.out.println("Sorry I can't decide.");
+		}
+		
+		System.out.println("==============");
+		
+		//Q4. Input 2 numbers and inspect the addition is even number and multiple of 3. 
+		int num4_1 = 0, num4_2 = 0;
+		
+		System.out.print("Input first number : ");
+		num4_1 = sc.nextInt();
+		System.out.print("Input second number : ");
+		num4_2 = sc.nextInt();
+		
+		if((num4_1+num4_2)%2 == 0 && (num4_1+num4_2)%3 == 0) {
+			System.out.println("the addition is even and multiple of 3.");
+		} else if((num4_1+num4_2)%2 != 0 && (num4_1+num4_2)%3 == 0) {
+			System.out.println("the addition is NOT even but multiple of 3.");
+		} else if((num4_1+num4_2)%2 == 0 && (num4_1+num4_2)%3 != 0) {
+			System.out.println("the addition is even but NOT multiple of 3.");
+		} else {
+			System.out.println("the addition is NOT even nor multiple of 3.");
+		}
+		
+		
+	}
+
+}

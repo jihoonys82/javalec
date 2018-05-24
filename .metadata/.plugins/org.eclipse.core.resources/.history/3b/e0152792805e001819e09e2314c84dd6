@@ -1,0 +1,149 @@
+package condition;
+
+import java.util.Scanner;
+
+public class If_Quiz {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		q1(sc);
+		
+		System.out.println("==============");
+		
+//		q2(sc);
+//		
+//		System.out.println("==============");
+//		
+//		q3(sc);		
+//		
+//		System.out.println("==============");
+//		
+//		q4(sc);	
+//		
+//		System.out.println("==============");
+//		
+//		q5(sc);
+		
+		sc.close();
+		
+	}
+
+	public static void q1(Scanner sc) {
+		//Q1. inspect the number is multiple of 3. 
+		
+		int num1 = 0; 
+		
+		System.out.print("Input number : ");
+		num1 = sc.nextInt();
+		
+		if(num1%3 == 0) {
+			System.out.println("num[" + num1 + "] is multiple of 3.");
+		} else {
+			System.out.println("num[" + num1 + "] is NOT multiple of 3.");
+		}
+	}
+	
+	public static void q2(Scanner sc) {
+		//Q2. Input 2 numbers and compare 
+		
+		int num2 = 0, num3 = 0;
+		
+		System.out.print("Input first number : ");
+		num2 = sc.nextInt();
+		System.out.print("Input second number : ");
+		num3 = sc.nextInt();
+		
+		if(num2>num3) {
+			System.out.println("Biggest number is " + num2 +".");
+		} else if(num2<num3) {
+			System.out.println("Biggest number is " + num3 +".");
+		} else {
+			System.out.println("Frist number " + num2 + " and " + num3 +" are even.");
+		}
+				
+	}
+	
+	public static void q3(Scanner sc) {
+		//Q3. input 3 numbers and print  biggest number.
+		
+		int num3_1 = 0, num3_2 = 0, num3_3 = 0;
+		
+		System.out.print("Input first number : ");
+		num3_1 = sc.nextInt();
+		System.out.print("Input second number : ");
+		num3_2 = sc.nextInt();
+		System.out.print("Input third number : ");
+		num3_3 = sc.nextInt();
+		
+		if(num3_1>=num3_2 && num3_1>=num3_3) {
+			System.out.println(num3_1 + " is the biggest number.");
+		} else if(num3_2>=num3_1 && num3_2>=num3_3) { 
+			System.out.println(num3_2 + " is the biggest number.");
+		} else if(num3_3>=num3_1 && num3_3>=num3_2) { 
+			System.out.println(num3_3 + " is the biggest number.");
+		} else {
+			System.out.println("Sorry I can't decide.");
+		}
+	}
+	
+	public static void q4(Scanner sc) {
+		//Q4. Input 2 numbers and inspect the addition is even number and multiple of 3. 
+		
+		int num4_1 = 0, num4_2 = 0;
+		
+		System.out.print("Input first number : ");
+		num4_1 = sc.nextInt();
+		System.out.print("Input second number : ");
+		num4_2 = sc.nextInt();
+		
+		if((num4_1+num4_2)%2 == 0 && (num4_1+num4_2)%3 == 0) {
+			System.out.println("the addition is even and multiple of 3.");
+		} else if((num4_1+num4_2)%2 != 0 && (num4_1+num4_2)%3 == 0) {
+			System.out.println("the addition is NOT even but multiple of 3.");
+		} else if((num4_1+num4_2)%2 == 0 && (num4_1+num4_2)%3 != 0) {
+			System.out.println("the addition is even but NOT multiple of 3.");
+		} else {
+			System.out.println("the addition is NOT even nor multiple of 3.");
+		}
+	}
+	
+	public static void q5(Scanner sc) {
+		//Q5. Input the score of Korean, English and Mathematics and calculate total score and average 
+		// Print each grade if the average over 90 is "A", over 80 is "B", over 70 is "C", over 60 is "D", below 60 is "F".
+		
+		int kor, eng, mat, tot;
+		double avg;
+		char grade;
+		
+		System.out.print("Input Korean score: ");
+		kor = sc.nextInt();
+		System.out.print("Input English score : ");
+		eng = sc.nextInt();
+		System.out.print("Input Mathematics score : ");
+		mat = sc.nextInt();
+		
+		tot= kor + eng + mat;
+		avg = (double) tot / 3.0;
+		if(avg>90) {
+			grade = 'A';
+		} else if(avg>80) {
+			grade = 'B';
+		} else if(avg>70) {
+			grade = 'C';
+		} else if(avg>60) {
+			grade = 'D';
+		} else {
+			grade = 'F';
+		}
+		
+		System.out.println("Korean score : " + kor);
+		System.out.println("English score : " + eng);
+		System.out.println("Mathematics score : " + mat);
+		System.out.println("Total score : " + tot);
+		System.out.printf("Average score : %.2f \n" + avg);
+		System.out.println("Grade : " + grade);
+	}
+
+}
