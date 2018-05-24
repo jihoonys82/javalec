@@ -69,76 +69,127 @@ public class If_Quiz {
 	public static void q3(Scanner sc) {
 		//Q3. input 3 numbers and print  biggest number.
 		
+		//1. define variables
 		int num3_1 = 0, num3_2 = 0, num3_3 = 0;
 		
+		//2. input numbers
 		System.out.print("Input first number : ");
 		num3_1 = sc.nextInt();
 		System.out.print("Input second number : ");
 		num3_2 = sc.nextInt();
 		System.out.print("Input third number : ");
 		num3_3 = sc.nextInt();
+		//TEST - input results - TEST OK
+		//System.out.println("[test]" + num3_1 +", " + num3_2 +", " + num3_3);
 		
-		if(num3_1>=num3_2 && num3_1>=num3_3) {
-			System.out.println(num3_1 + " is the biggest number.");
-		} else if(num3_2>=num3_1 && num3_2>=num3_3) { 
-			System.out.println(num3_2 + " is the biggest number.");
-		} else if(num3_3>=num3_1 && num3_3>=num3_2) { 
-			System.out.println(num3_3 + " is the biggest number.");
+		//3. identify biggest number
+		int max = 0; 
+		if(num3_1>num3_2) {
+			max = num3_1; 
 		} else {
-			System.out.println("Sorry I can't decide.");
+			max = num3_2;
 		}
+		if(max<num3_3) {
+			max = num3_3;
+		}
+		
+		//4. print results
+		System.out.println(max + " is the biggest number in " + num3_1 +", " + num3_2 +", and" + num3_3 +".");
+		
+		
+//		if(num3_1>=num3_2 && num3_1>=num3_3) {
+//			System.out.println(num3_1 + " is the biggest number.");
+//		} else if(num3_2>=num3_1 && num3_2>=num3_3) { 
+//			System.out.println(num3_2 + " is the biggest number.");
+//		} else if(num3_3>=num3_1 && num3_3>=num3_2) { 
+//			System.out.println(num3_3 + " is the biggest number.");
+//		} else {
+//			System.out.println("Sorry I can't decide.");
+//		}
 	}
 	
 	public static void q4(Scanner sc) {
 		//Q4. Input 2 numbers and inspect the addition is even number and multiple of 3. 
 		
+		//1. declare variables
 		int num4_1 = 0, num4_2 = 0;
 		
+		//2. Input values
 		System.out.print("Input first number : ");
 		num4_1 = sc.nextInt();
 		System.out.print("Input second number : ");
 		num4_2 = sc.nextInt();
 		
-		if((num4_1+num4_2)%2 == 0 && (num4_1+num4_2)%3 == 0) {
-			System.out.println("the addition is even and multiple of 3.");
-		} else if((num4_1+num4_2)%2 != 0 && (num4_1+num4_2)%3 == 0) {
-			System.out.println("the addition is NOT even but multiple of 3.");
-		} else if((num4_1+num4_2)%2 == 0 && (num4_1+num4_2)%3 != 0) {
-			System.out.println("the addition is even but NOT multiple of 3.");
-		} else {
-			System.out.println("the addition is NOT even and NOT multiple of 3.");
+		//TEST - input results - TEST OK
+		//System.out.println("[test]" + num4_1 +", " + num4_2 );
+				
+		//3. addition
+		int sum = num4_1 + num4_2;
+				
+		//4. inspect multiple of 3 and even number. 
+		// even number: sum%2 == 0
+		// multiple of 3 : sum%3 ==0
+		boolean b = false;
+		if(sum%2 ==0 && sum%3 ==0) { 
+			b = true; 
 		}
+				
+		//5. print result
+		System.out.print("the addition of [" + num4_1 + "] and ["+ num4_2 + "] is ["+sum);
+		if(b) {
+			System.out.println("] and it is multipul of 3 and even number.");
+		} else {
+			System.out.println("] and it is NOT multipul of 3 and even number.");
+		}
+		
+//		if((num4_1+num4_2)%2 == 0 && (num4_1+num4_2)%3 == 0) {
+//			System.out.println("the addition is even and multiple of 3.");
+//		} else if((num4_1+num4_2)%2 != 0 && (num4_1+num4_2)%3 == 0) {
+//			System.out.println("the addition is NOT even but multiple of 3.");
+//		} else if((num4_1+num4_2)%2 == 0 && (num4_1+num4_2)%3 != 0) {
+//			System.out.println("the addition is even but NOT multiple of 3.");
+//		} else {
+//			System.out.println("the addition is NOT even and NOT multiple of 3.");
+//		}
 	}
 	
 	public static void q5(Scanner sc) {
 		//Q5. Input the score of Korean, English and Mathematics and calculate total score and average 
 		// Print each grade if the average over 90 is "A", over 80 is "B", over 70 is "C", over 60 is "D", below 60 is "F".
 		
+		//1. declare variables 
 		int kor, eng, mat, tot;
 		double avg;
-		char grade;
+		char grade ='\0'; // '\0' means 'null' character in ASCII
 		
-		System.out.print("Input Korean score: ");
+		//2. input data
+		System.out.print("Input Korean score : ");
 		kor = sc.nextInt();
 		System.out.print("Input English score : ");
 		eng = sc.nextInt();
 		System.out.print("Input Mathematics score : ");
 		mat = sc.nextInt();
 		
+		//3. calculation (addition)
 		tot= kor + eng + mat;
+		
+		//4. calculation (average)
 		avg = (double) tot / 3.0;
-		if(avg>90) {
+		
+		//5. get grade
+		if(avg>=90) {
 			grade = 'A';
-		} else if(avg>80) {
+		} else if(avg>=80) {
 			grade = 'B';
-		} else if(avg>70) {
+		} else if(avg>=70) {
 			grade = 'C';
-		} else if(avg>60) {
+		} else if(avg>=60) {
 			grade = 'D';
 		} else {
 			grade = 'F';
 		}
 		
+		//6. print results
 		System.out.println("Korean score : " + kor);
 		System.out.println("English score : " + eng);
 		System.out.println("Mathematics score : " + mat);
