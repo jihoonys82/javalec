@@ -1,0 +1,21 @@
+package condition.loop;
+
+public class ForEx_01 {
+	public static void main(String[] args) {
+		//Iteration, loop
+		
+		//for, while, do-while 
+		
+		//for loop 
+		// for(initialization ; termination ; increment) {
+		//		iteration code;
+		//	 	iteration when condition is true 
+		// } 
+		
+		int i ; 
+		for (i=0;i<5;i++) {
+			System.out.println("Hello : " + i);
+		}
+		
+	}
+}
