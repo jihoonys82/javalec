@@ -13,8 +13,8 @@ public class ForEx_06 {
 		//number of iteration : 9
 		//number range: 1~9
 
-		//initialiZation : int i = 1; 
-		//termination : i<10;
+		//initialization : int i = 1; 
+		//termination : i<10; // i<=9
 		//increment : i++
 		for(int i=1; i<10; i++) {
 			System.out.println("2 x " + i + " = " + 2*i );
