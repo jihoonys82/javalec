@@ -1,0 +1,10 @@
+package condition;
+
+public class SwitchEx_02 {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}
