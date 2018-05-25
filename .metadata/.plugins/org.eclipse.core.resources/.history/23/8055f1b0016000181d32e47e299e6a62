@@ -1,0 +1,26 @@
+package condition.loop;
+
+import java.util.Scanner;
+
+public class EtcEx_03 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num;
+		while(true) {
+			System.out.println("1. Haha");
+			System.out.println("2. Hoho");
+			System.out.println("3. Quit");
+			System.out.print(" >> ");
+			num = sc.nextInt();
+			
+			if(num==3) break;
+		}
+		
+
+		sc.close();
+	}
+
+}

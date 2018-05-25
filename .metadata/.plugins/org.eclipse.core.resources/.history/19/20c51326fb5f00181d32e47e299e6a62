@@ -1,0 +1,25 @@
+package condition.loop;
+
+public class EtcEx_01 {
+
+	public static void main(String[] args) {
+		
+		//break
+		// abort control statement except if.
+		// break 코드가 포함된 중괄호의 제어문 1개만 중단시킴
+		
+		//continue
+		//	using in loop statement
+		// 	continue next loop 
+		// 		for - go to increment
+		//		while - goto termination
+		//		do-while -- go to termination 
+		
+		re: 
+			System.out.println("Test");
+
+		continue re;
+			
+	}
+
+}
