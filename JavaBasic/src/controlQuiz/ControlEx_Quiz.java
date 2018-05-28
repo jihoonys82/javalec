@@ -90,18 +90,23 @@ public class ControlEx_Quiz {
 		   
 		//for GCD 
 		for(int i=smaller;i>0;i--) {
-			if(smaller%i==0) {
-				for(int j=smaller;j>0;j--) {
-					if(bigger%j == 0 && smaller%j == 0) {
-						gcd = j; 
-						break;
-					}
-				}
-				if(gcd != 0) {
-					System.out.println("GCD : " + gcd);
-					break;
-				}
+//			if(smaller%i==0) {
+//				for(int j=smaller;j>0;j--) {
+//					if(bigger%j == 0 && smaller%j == 0) {
+//						gcd = j; 
+//						break;
+//					}
+//				}
+//				if(gcd != 0) {
+//					System.out.println("GCD : " + gcd);
+//					break;
+//				}
+//			}
+			if(smaller%i==0 && bigger%i==0) {
+				gcd = i;
+				break;
 			}
+			System.out.println("GCD : " + gcd);
 		}
 		
 		//for LCM
@@ -146,7 +151,8 @@ public class ControlEx_Quiz {
 		
 		int num5 = 0;
 		boolean token = true; // check for prime number. if the number is prime number it is true in the for statement 
-
+		//teacher use token name as "flag"
+		
 		System.out.print("Input Number >>");
 		num5 = sc.nextInt();
 		
@@ -154,10 +160,13 @@ public class ControlEx_Quiz {
 		System.out.print("Prime Number between 1 and "+ num5 + " : ");
 		for(int i=2;i<=num5;i++) {
 			for(int j=2;j<i;j++) {
-				if(i%j==0) token = false;  // false means i is not prime number
+				if(i%j==0) {
+					token = false;  // false means i is not prime number
+					break;
+				}
 			}
 			if(token) {
-				System.out.print(i + " ");
+				System.out.println(i);
 			} else {
 				token = true; // reset token
 			}
