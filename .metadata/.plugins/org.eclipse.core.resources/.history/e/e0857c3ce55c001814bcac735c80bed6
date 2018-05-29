@@ -1,7 +1,0 @@
-package operator;
-
-public class UnaryEx_01 {
-	public static void main(String[] args) {
-		
-	}
-}

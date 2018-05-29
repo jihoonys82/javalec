@@ -3,7 +3,13 @@ package array;
 import java.util.Scanner;
 
 public class ArrayEx_Quiz_01 {
-
+	
+	public static final int FEE = 12000; // make variable to constant.
+	
+	//constant : unchangeable value.
+	// 1. literal constant : 123, 'A', "Apple", 3.4F. 2.1, true ......
+	// 2. named (variable to constant) 
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -14,10 +20,10 @@ public class ArrayEx_Quiz_01 {
 		//input number of people who live in each floor. 
 		System.out.println("=====Input=====");
 		for(int i=0;i<arr.length-1;i++) {
-			System.out.print((i+1) +"층에 사는 인운은?");
+			System.out.print((i+1) +"층에 사는 인원은?");
 			arr[i] = sc.nextInt();
 			arr[5] += arr[i];
-			arr2[i] = arr[i]*12000;
+			arr2[i] = arr[i]*FEE;
 			arr2[5] += arr2[i];		
 		}
 		
