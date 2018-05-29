@@ -22,15 +22,17 @@ public class Array2DEx_03 {
 		int[] sum;
 		double[] avg;
 		
-		sum = new int[2];
+		sum = new int[2]; // when use "new", it initialize the space.
 		avg = new double[2];
+		
+		String[] subject = {"Kor", "Eng", "Mat"};
 		
 		//1. input score
 		Scanner sc = new Scanner(System.in);
 		
 		for(int i=0;i<2;i++) {
 			for(int j=0;j<3;j++) {
-				System.out.print("Input Subject"+ j + " score for Student" + (i+1) + " >> ");
+				System.out.print("Input "+ subject[j] + " score for Student" + (i+1) + " >> ");
 				sco[i][j] = sc.nextInt();
 			}
 		}
@@ -51,14 +53,14 @@ public class Array2DEx_03 {
 		//3. print 
 		// ex) 	num	kor	eng	mat	tot	avg
 		//		1	???	???	???	???	???
-		System.out.println("num\tkor\teng\tmat\ttot\tavg");
+		System.out.println("num\tkor\teng\tmat\ttot\tavg"); 
 		for(int i=0;i<2;i++) {
-			System.out.print((i+1)+"\t");
-			for(int j=0;j<3;j++) {
-				System.out.print(sco[i][j]+"\t");
+			System.out.print((i+1)+"\t"); //student number
+			for(int j=0;j<3;j++) { 
+				System.out.print(sco[i][j]+"\t"); //print each scores
 			}
-			System.out.print(sum[i]+"\t");
-			System.out.printf("%.2f\n", avg[i]);
+			System.out.print(sum[i]+"\t"); // print total
+			System.out.printf("%.2f\n", avg[i]); //print average
 		}
 		
 	}
