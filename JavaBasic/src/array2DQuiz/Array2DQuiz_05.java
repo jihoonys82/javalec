@@ -11,7 +11,7 @@ public class Array2DQuiz_05 {
 		int phase_counter = 0;  //phase_counter%4 means index of phase, phase_counter%2 means cur axis(even: x-axis, odd y-axis) 
 		int xpos = 0, ypos = 0; //indicate the current cur position
 		
-		for(int i=10;i>0;i--) {
+		for(int i=arr.length*2;i>0;i--) {
 			if(phase_counter%2==0) {
 				//x axis moving
 				for(int j=0;j<(i/2);j++) {
@@ -40,8 +40,8 @@ public class Array2DQuiz_05 {
 		}
 		
 		// 출력부 - 수정 금지
-		for( int i=0; i<5; i++ ) {
-			for( int j=0; j<5; j++ ) {
+		for( int i=0; i<arr.length; i++ ) {
+			for( int j=0; j<arr[0].length; j++ ) {
 				System.out.print(arr[i][j]+"\t");
 			}
 			System.out.println();
