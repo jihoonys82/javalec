@@ -1,6 +1,6 @@
 package classMethod;
 
-public class Method_03_Quiz {
+public class Method_Quiz {
 	private int num1; 
 	private int num2;
 	private char operator;
@@ -22,7 +22,10 @@ public class Method_03_Quiz {
 		return operator;
 	}
 	public void setOperator(String operator) {
-		this.operator = operator.charAt(0);
+		if(operator.length() != 0) {
+			this.operator = operator.charAt(0);
+		}
+		else this.operator = ' ';
 	}
 	
 	public int sum(int num1, int num2) {
