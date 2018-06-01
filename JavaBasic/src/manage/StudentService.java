@@ -8,10 +8,10 @@ public class StudentService {
 	
 	public StudentService() {
 		stu = new Student();
+		sc = new Scanner(System.in);
 	}
 	
 	public void insertInfo() {
-		sc = new Scanner(System.in);
 		
 		System.out.println("=== Input Student Informaiton === ");
 		System.out.print("Student Name >> ");
@@ -23,8 +23,7 @@ public class StudentService {
 	}
 	
 	public void insertScore() {
-		sc = new Scanner(System.in);
-		
+				
 		System.out.println("=== Input Student Score === ");
 		System.out.print("Korean score >> ");
 		stu.setKor(sc.nextInt());
