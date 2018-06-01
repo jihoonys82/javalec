@@ -14,7 +14,10 @@
 <fullyQualifiedTypeName name="classMethod.Method_01"/>
 <fullyQualifiedTypeName name="classMethod.MethodEx"/>
 <fullyQualifiedTypeName name="classMethod.Method_02"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="classMethod.Method_03_Quiz"/>
+<fullyQualifiedTypeName name="memberField.MemberField_01"/>
+<fullyQualifiedTypeName name="memberField.MemberField_02"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
 </qualifiedTypeNameHistroy>

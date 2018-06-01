@@ -14,4 +14,6 @@ public class MemberField_01 {
 	public void setNum(int num) {
 		this.num = num;
 	}
+	
+
 }

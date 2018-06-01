@@ -1,7 +1,0 @@
-package condition.star;
-
-public class Star_07 {
-	public static void main(String[] args) {
-		
-	}
-}
