@@ -17,8 +17,9 @@ public class StudentService_ver2 {
 	private int getIndex() {
 		int idx = 0;
 		while(idx<1 || idx>stuArr.length) {
-			System.out.print("Input Student Index >> "); 
+			System.out.print("Input Student Index (1~"+ stuArr.length + ") >> "); 
 			idx = sc.nextInt();
+			sc.nextLine();
 		}
 		return idx;
 	}
@@ -35,46 +36,47 @@ public class StudentService_ver2 {
 	
 	public void insertInfoAll() {
 		for(int i=0;i<stuArr.length;i++) {
-			insertInfo(stuArr[i], i);
+			insertInfo(stuArr[i], i+1);
 		}
 	}
 	public void insertInfoIdx() {
 		int i = getIndex();
-		insertInfo(stuArr[i], i);
+		insertInfo(stuArr[i-1], i);
 	}
 	
 	private void insertScore(Student stu, int idx) {
-		System.out.println("=== Input Student Score === ");
+		System.out.println("=== Input Student "+ idx +" Score === ");
 		System.out.print("Korean score >> ");
 		stu.setKor(sc.nextInt());
 		System.out.print("English score >> ");
 		stu.setEng(sc.nextInt());
 		System.out.print("Math score >> ");
 		stu.setMath(sc.nextInt());
+		sc.nextLine();
 		this.calcSum(stu);
 		this.calcAvg(stu);
 	}
 	
 	public void insertScoreAll() {
 		for(int i=0;i<stuArr.length;i++) {
-			insertScore(stuArr[i], i);
+			insertScore(stuArr[i], i+1);
 		}
 	}
 	
 	public void insertScoreIdx() {
 		int i = getIndex();
-		insertScore(stuArr[i], i);
+		insertScore(stuArr[i-1], i);
 	}
 	
 	public void insertStu(int idx) {
-		insertInfo(stuArr[idx], idx);
-		insertScore(stuArr[idx], idx);
+		insertInfo(stuArr[idx-1], idx);
+		insertScore(stuArr[idx-1], idx);
 	}
 	
 	public void insertStuAll() {
 		for(int i=0;i<stuArr.length;i++) {
-			insertInfo(stuArr[i], i);
-			insertScore(stuArr[i], i);
+			insertInfo(stuArr[i], i+1);
+			insertScore(stuArr[i], i+1);
 		}
 	}
 	
@@ -94,12 +96,12 @@ public class StudentService_ver2 {
 	}
 	public void printStuAll() {
 		for(int i=0;i<stuArr.length;i++) {
-			printStu(stuArr[i], i);
+			printStu(stuArr[i], i+1);
 		}
 	}
 	public void printStuIdx() {
 		int i = getIndex();
-		printStu(stuArr[i], i);
+		printStu(stuArr[i-1], i);
 	}
 	
 	public void scClose() {

@@ -5,14 +5,17 @@ import java.util.Scanner;
 public class StudentService {
 	private Student stu;
 	private Scanner sc;
+	//option 2. initialization directly, instead of type in constructor. 
+	//private Student stu = new Student();
 	
+	
+	//constructor : for initialize 
 	public StudentService() {
 		stu = new Student();
 		sc = new Scanner(System.in);
 	}
 	
-	public void insertInfo() {
-		
+	public void insertInfo() {	
 		System.out.println("=== Input Student Informaiton === ");
 		System.out.print("Student Name >> ");
 		stu.setName(sc.nextLine());
@@ -22,8 +25,7 @@ public class StudentService {
 		
 	}
 	
-	public void insertScore() {
-				
+	public void insertScore() {				
 		System.out.println("=== Input Student Score === ");
 		System.out.print("Korean score >> ");
 		stu.setKor(sc.nextInt());
@@ -31,7 +33,8 @@ public class StudentService {
 		stu.setEng(sc.nextInt());
 		System.out.print("Math score >> ");
 		stu.setMath(sc.nextInt());
-				
+		this.calcSum();
+		this.calcAvg();
 	}
 	
 	public void calcSum() {

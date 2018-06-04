@@ -15,9 +15,13 @@
 <fullyQualifiedTypeName name="classMethod.MethodEx"/>
 <fullyQualifiedTypeName name="classMethod.Method_02"/>
 <fullyQualifiedTypeName name="classMethod.Method_03_Quiz"/>
-<fullyQualifiedTypeName name="memberField.MemberField_01"/>
 <fullyQualifiedTypeName name="memberField.MemberField_02"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="memberField.MemberField_01"/>
+<fullyQualifiedTypeName name="overloading.Overloading_01"/>
+<fullyQualifiedTypeName name="overloading.Overloading_02"/>
+<fullyQualifiedTypeName name="constructor.Constructor_01"/>
+<fullyQualifiedTypeName name="constructor.Constructor_02"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

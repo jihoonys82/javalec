@@ -9,12 +9,10 @@ public class Exem {
 		ss.insertInfo();
 		
 		ss.insertScore();
-		
-		ss.calcSum();
-		ss.calcAvg();
-		
+
 		ss.printStu();
 		
 		ss.scClose();
+		
 	}
 }
