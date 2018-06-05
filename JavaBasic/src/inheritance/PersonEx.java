@@ -7,6 +7,7 @@ public class PersonEx {
 		
 		Product prod1 = new Tv("LG", 500);
 		Product prod2 = new Computer("i5", 500);
+		//if generate Tv and Computer instance with their data type, declare each buy method in Product class such as buy(Tv v), buy(Computer c). 
 		
 		p.buy(prod1);
 		p.buy(prod2);

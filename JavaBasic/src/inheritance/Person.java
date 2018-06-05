@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Person {
+public class Person {	
 	private String name;
 	private int money;
 	private Product prod;
@@ -34,9 +34,5 @@ public class Person {
 	public void setMoney(int money) {
 		this.money = money;
 	}
-
-	
-	
-	
 	
 }

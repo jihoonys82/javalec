@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Product {
+public abstract class Product {
 	protected String model;
 	protected int price;
 	
@@ -25,8 +25,9 @@ public class Product {
 		this.price = price;
 	}
 	
-	public void out() {
-		
-	}
+	//alt+shift+s+r ==> Shortcuts for generate getters and setters  
+	
+	//abstract method - there is no implemented code. child class HAS TO override this method.
+	public abstract void out() ;
 	
 }
