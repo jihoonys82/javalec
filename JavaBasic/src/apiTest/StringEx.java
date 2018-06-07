@@ -38,5 +38,26 @@ public class StringEx {
 		// str에 "Java"가 있는지 판별
 		System.out.println("contains(\"Java\") : " + str.contains("Java"));
 		
+		System.out.println("-----trim()-----");
+		String trim = "    ASDFAF21432 5134gEER   ";
+		System.out.println("trim() : " + trim.trim());
+		
+		System.out.println("-----split()-----");
+		String splitData = "1,2,3,4,5,test";
+		String[] splited = splitData.split(",");
+		for(String s : splited) {
+			System.out.println("split() : " + s);	
+		}
+		
+		System.out.println("-----getBytes()-----");
+		byte[] bytes = str.getBytes();
+		
+		System.out.println("getBytes() : " + bytes[0]);
+		System.out.println("getBytes() : " + bytes[1]);
+		System.out.println("getBytes() : " + bytes[2]);
+		System.out.println("getBytes() : " + bytes[3]);
+		// for to get further information refer Stream at I/O section 
+		
+		
 	}
 }
