@@ -26,4 +26,10 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="inheritance.Child03"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="innerClass.Outer.MemberInner"/>
+<fullyQualifiedTypeName name="innerClass.Outer"/>
+<fullyQualifiedTypeName name="innerClass.Outer.StaticInner"/>
+<fullyQualifiedTypeName name="innerClass.OuterEx"/>
+<fullyQualifiedTypeName name="LocalInner"/>
+<fullyQualifiedTypeName name="innerClass.Anonymous"/>
 </qualifiedTypeNameHistroy>
