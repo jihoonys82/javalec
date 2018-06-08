@@ -32,4 +32,9 @@
 <fullyQualifiedTypeName name="innerClass.OuterEx"/>
 <fullyQualifiedTypeName name="LocalInner"/>
 <fullyQualifiedTypeName name="innerClass.Anonymous"/>
+<fullyQualifiedTypeName name="apiTest.Point"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.lang.Cloneable"/>
+<fullyQualifiedTypeName name="java.lang.CloneNotSupportedException"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 </qualifiedTypeNameHistroy>
