@@ -5,10 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class CollectionEx_02_List {
+	@SuppressWarnings({ "unused", "rawtypes" })
 	public static void main(String[] args) {
 		
 		//it is store Object type
-		@SuppressWarnings("rawtypes")
 		List list1 = new ArrayList();
 		//it is store String type only. 
 		List<String> list2 = new ArrayList<>(); // <-- from java 7, filling data type in the constructor generic<> is optional. 
@@ -20,7 +20,7 @@ public class CollectionEx_02_List {
 		list3.add(123);
 		
 		System.out.println("============");
-		// ... 가변인자, 가변 파라미터, varargs. undefined number of parameters
+		// '...' : 가변인자, 가변 파라미터, varargs. undefined number of parameters
 		List intList = Arrays.asList(1,2,3,4,5);
 		System.out.println(intList);
 		
