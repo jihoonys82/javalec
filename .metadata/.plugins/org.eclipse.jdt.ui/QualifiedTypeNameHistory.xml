@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Number"/>
-<fullyQualifiedTypeName name="classBasic.MainClass_01"/>
-<fullyQualifiedTypeName name="classBasic.MainClass_02"/>
-<fullyQualifiedTypeName name="classBasic.ClassEx_03"/>
-<fullyQualifiedTypeName name="classMethod.Method_01"/>
 <fullyQualifiedTypeName name="classMethod.MethodEx"/>
 <fullyQualifiedTypeName name="classMethod.Method_02"/>
 <fullyQualifiedTypeName name="classMethod.Method_03_Quiz"/>
@@ -60,4 +55,9 @@
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
 <fullyQualifiedTypeName name="java.net.ServerSocket"/>
+<fullyQualifiedTypeName name="thread_Basic.ThreadEx_04_join"/>
+<fullyQualifiedTypeName name="thread_Basic.DaemonThreadTest"/>
+<fullyQualifiedTypeName name="thread_Chat1on1.Server_1on1"/>
+<fullyQualifiedTypeName name="java.net.Socket"/>
+<fullyQualifiedTypeName name="thread_Chat1on1.Client_1on1"/>
 </qualifiedTypeNameHistroy>
