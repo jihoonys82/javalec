@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="classMethod.MethodEx"/>
-<fullyQualifiedTypeName name="classMethod.Method_02"/>
 <fullyQualifiedTypeName name="classMethod.Method_03_Quiz"/>
 <fullyQualifiedTypeName name="memberField.MemberField_02"/>
 <fullyQualifiedTypeName name="memberField.MemberField_01"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="thread_Chat1on1.Server_1on1"/>
 <fullyQualifiedTypeName name="java.net.Socket"/>
 <fullyQualifiedTypeName name="thread_Chat1on1.Client_1on1"/>
+<fullyQualifiedTypeName name="thread_Chat1on1.Receiver_1on1"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
 </qualifiedTypeNameHistroy>
