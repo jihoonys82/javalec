@@ -1,12 +1,15 @@
 package swing;
 
+import java.awt.Color;
 import java.awt.Container;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -20,11 +23,21 @@ public class SwingEx_07_ContentPane extends JFrame implements ActionListener {
 	private Container root; // root container
 	
 	// first panel
-	private JPanel pane;
+	private JPanel 	pane;
 	private JButton btnHi;
 	private JButton btnBye;
 	private JButton btnChange;
 	// ----------------------------------
+	
+	// second panel
+	private JPanel 	pane2;
+	private JPanel 	pane2sub;
+	private JButton btnOk;
+	private JButton btnCancel;
+	private JButton btnChange2;
+	private JLabel 	lbDesc;
+	// ----------------------------------
+	
 	
 	// -- variables for menu setting --
 	private JMenuBar  menuBar; 	// menubar (ex. eclipse File ~ Help) 
@@ -55,7 +68,10 @@ public class SwingEx_07_ContentPane extends JFrame implements ActionListener {
 		root = getContentPane();
 		
 		initPane(); // first panel setting 
+		initPane2(); // second panel setting 
+		
 		root.add(pane);
+		root.add(pane2);
 		
 	}
 
@@ -75,6 +91,33 @@ public class SwingEx_07_ContentPane extends JFrame implements ActionListener {
 		btnChange.addActionListener(this);
 	}
 
+	private void initPane2() {
+		pane2 = new JPanel();
+		pane2sub = new JPanel();
+		
+		btnOk = new JButton("OK");
+		btnCancel = new JButton("Cancel");
+		btnChange2 = new JButton("Change");
+		
+		pane2.setLayout(new GridLayout(2,0));
+		pane2sub.add(btnOk);
+		pane2sub.add(btnCancel);
+		pane2sub.add(btnChange2);
+		
+		pane2.add(pane2sub);
+		
+		lbDesc = new JLabel("This is second container");
+		lbDesc.setHorizontalAlignment(JLabel.CENTER);
+		
+		pane2.setBackground(Color.CYAN);
+		pane2.add(lbDesc);
+		
+		btnOk.addActionListener(this);
+		btnCancel.addActionListener(this);
+		btnChange2.addActionListener(this);
+		
+	}
+	
 	private void initMenuBar() {
 		menuBar = new JMenuBar();
 		menu = new JMenu("Menu");
@@ -139,7 +182,21 @@ public class SwingEx_07_ContentPane extends JFrame implements ActionListener {
 			pane.validate();
 			pane.repaint();
 		} else if(e.getSource() == btnChange) {
+			root.remove(pane);
+			root.add(pane2);
 			
+			root.validate();
+			root.repaint();
+		} else if(e.getSource() == btnOk) {
+			lbDesc.setText("OK!!");
+		} else if(e.getSource() == btnCancel) {
+			lbDesc.setText("Cancel!!");
+		} else if(e.getSource() == btnChange2) { 
+			root.remove(pane2);
+			root.add(pane);
+			
+			root.validate();
+			root.repaint();
 		}
 		
 	}
