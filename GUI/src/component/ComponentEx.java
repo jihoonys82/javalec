@@ -11,12 +11,10 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.ArrayList;
-import java.util.List;
 
+import javax.swing.BorderFactory;
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -30,6 +28,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.border.BevelBorder;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
@@ -161,7 +160,7 @@ public class ComponentEx extends JFrame {
 		JCheckBox checkbox3 = new JCheckBox("Ice Chocolate");
 		
 		JTextField txt = new JTextField();
-		txt.setColumns(20);
+		txt.setColumns(25);
 		
 		checkbox1.addItemListener(new ItemListener() {
 			@Override
@@ -253,7 +252,9 @@ public class ComponentEx extends JFrame {
 				}
 			}
 		});
-			
+		
+		pane.setBorder(BorderFactory.createBevelBorder(BevelBorder.RAISED));
+		
 		pane.add(rb1);
 		pane.add(rb2);
 		pane.add(rb3);
@@ -271,6 +272,8 @@ public class ComponentEx extends JFrame {
 		
 		JList<String> jList = new JList<>(str);
 		jList.setPreferredSize(new Dimension(100,150));
+//		jList.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+		
 		
 		JTextField txt = new JTextField();
 		txt.setColumns(20);
@@ -278,7 +281,9 @@ public class ComponentEx extends JFrame {
 		jList.addListSelectionListener(new ListSelectionListener() {
 			@Override
 			public void valueChanged(ListSelectionEvent e) {
-				txt.setText(jList.getSelectedValue());
+				if(jList.getValueIsAdjusting()) {
+					txt.setText(jList.getSelectedValue());
+				}
 			}
 		});
 		
@@ -321,11 +326,12 @@ public class ComponentEx extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				String str = txt.getText();
 				int idx = cb.getSelectedIndex();
-				//it needs to be edit. 
-				cb.remove(idx);
-				cb.insertItemAt(str, idx);
-				
-				
+				if(!str.equals(cb.getSelectedItem())) {
+					cb.insertItemAt(str, idx);
+					cb.removeItemAt(idx+1);
+					cb.validate();
+					cb.repaint();
+				}
 			}
 		});
 		
