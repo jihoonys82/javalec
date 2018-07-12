@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\user2\git\javaMiniProj\InJung"/>
 		<item value="D:\workspace\Test"/>
 		<item value="D:\workspace\JavaBasicTeacher"/>
 		<item value="D:\workspace\JavaBasic"/>
 	</list>
 	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.wb"/>
+			<item value="org.eclipse.wb/org.eclipse.wb.rcp"/>
+		</list>
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
 		<item value="false" key="FilterByLocation"/>

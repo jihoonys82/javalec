@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <syncparticipants>
-<participant displayName="Git (JavaBasic/src/operator)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1526904951518">
+<participant displayName="Git (InJung/src/injung/model)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1531120569958">
 <data forceFetch="false" root="false">
-<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="JavaBasic/src/operator" startupAction="none">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="InJung/src/injung/model" startupAction="none">
 <org.eclipse.team.ui.MODEL_PARTICIPANT_REFRESH_SCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
 <org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS modelProviderId="org.eclipse.core.resources.modelProvider">
 <mappings>
-<resources resourcePath="/JavaBasic/src/operator" resourceType="2"/>
+<resources resourcePath="/InJung/src/injung/model" resourceType="2"/>
 </mappings>
 </org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS>
 </org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS>
-<gitSynchronizeData container="D:/workspace/JavaBasicTeacher" dstRev="HEAD" inludeLocal="true" srcRev="HEAD">
+<gitSynchronizeData container="C:/Users/user2/git/javaMiniProj/InJung" dstRev="refs/remotes/origin/master" inludeLocal="true" srcRev="HEAD">
 <includedPaths>
-<path path="D:/workspace/JavaBasic/src/operator"/>
+<path path="C:/Users/user2/git/javaMiniProj/InJung/src/injung/model"/>
 </includedPaths>
 </gitSynchronizeData>
 </data>
